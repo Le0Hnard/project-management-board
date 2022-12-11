@@ -8,7 +8,7 @@ const useDataFetching = (dataSource) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const tasks = await fetch(dataSource);
+        const data = await fetch(dataSource);
         const result = await data.json();
 
         if (result) {
